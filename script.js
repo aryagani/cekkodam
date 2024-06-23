@@ -36,7 +36,7 @@ const kodamData = {
     "Batang Macis", "Tenda Eiger", "Motor Beat", "Raja Singa", "Burung Papilo", "Reket Nyamuk", "Sampo Pantene", "Mas Is", "Gitar Spanyol", "Spiker Blututh", "Sambal Tarase",
     "Bakar-bakar Sate", "Tampurung", "Minya Kalapa", "Toples Ehan", "Tas Cerewet", "Token Listrik", "Doi SPP", "Gigi Main Catur", "Nyamuk Main Bola", "Bocil Epep", "Rica Jawa",
     "Flashdisk", "Hardisk", "Tukang Aborsi", "Botol Isoplus", "Estes Solo Lord", "Fanny Darat", "BH Esmeralda", "Minion ML", "DJ Alok", "Buff Ungu", "Buff Merah", "Mimiperih",
-    "Aldo Gay", "Gula-gula Babol", "Pago-pago", "Sapu Lidi", ""
+    "Aldo Gay", "Gula-gula Babol", "Pago-pago", "Sapu Lidi"
   ];
   
   function getRandomElement(array) {
