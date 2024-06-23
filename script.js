@@ -78,7 +78,7 @@ const kodamData = {
             } else {
                 swal.fire({
                                 title: "Peringatan",
-                                text: "Silakan masukkan nama orang terlebih dahulu.",
+                                text: "Isi Nama Dulu Boss.",
                                 icon: "warning",
                             });
                             return;
