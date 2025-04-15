@@ -30,13 +30,18 @@ const kodamData = {
   };
   
   const kodam3 = [
-    "Kucing Israel", "Kucing Palestina", "Batagor", "Tusu Sate", "Roti Jala", "Sagela", "Palemba", "Laba-laba Sunda", "Kupu-kupu Malam", "Bakso MasTakim",
-    "Beruang Petir", "Bulu Cina", "Jembatan Wabanga", "Rizki Skibidi", "Nike Balarica", "Sarang Opu", "Durian Botak", "Cingkeh Muara-Bone", "Cingkeh Muara-Bone",
-    "Cingkeh Moodulions", "Cingkeh Inogaluma", "Cingkeh Permata", "Mano Braco", "Te Kikan", "Kaus Kaki", "Spatu Homiped", "Stik PS2", "Nyamuk Pake Helm", "Dj Bentor",
-    "Batang Macis", "Tenda Eiger", "Motor Beat", "Raja Singa", "Burung Papilo", "Reket Nyamuk", "Sampo Pantene", "Mas Is", "Gitar Spanyol", "Spiker Blututh", "Sambal Tarase",
-    "Bakar-bakar Sate", "Tampurung", "Minya Kalapa", "Toples Ehan", "Tas Cerewet", "Token Listrik", "Doi SPP", "Gigi Main Catur", "Nyamuk Main Bola", "Bocil Epep", "Rica Jawa",
-    "Flashdisk", "Hardisk", "Tukang Aborsi", "Botol Isoplus", "Estes Solo Lord", "Fanny Darat", "BH Esmeralda", "Minion ML", "DJ Alok", "Buff Ungu", "Buff Merah", "Mimiperih",
-    "Aldo Gay", "Gula-gula Babol", "Pago-pago", "Sapu Lidi", "Kursi Camping"
+    "Kucing Koprol", "Nasi Uduk Merem", "Sosis Tertusuk", "Ayam Goyang", "Bebek Menari", "Unta Kebab", "Gorengan Lemas", "Jus Brokoli", "Tahu Menangis", "Cumi Cemburu",
+"Teh Botol Panas", "Kerupuk Terbang", "Lontong Guling", "Ikan Caper", "Belut Selfie", "Nugget Terakhir", "Kucing Mualaf", "Tikus Berdasi", "Bubur Tidak Diaduk",
+"Roti Gosong", "Bebek Guling", "Laler Main IG", "Burung Nyanyi", "Semangka Pahit", "Mangga Berdebu", "Durian Terluka", "Pisang Ngevape", "Lalat Mengaji",
+"Nyamuk Pacaran", "Batu Meleleh", "Tempe Berlari", "Kambing Jadian", "Ayam Geprek Palsu", "Boba Sialan", "Es Krim Nangis", "Jengkol Tersesat", "Kol Goreng",
+"Bakso Kembar", "Cilok Patah Hati", "Seblak Berdarah", "Sambal Ngambek", "Mie Ayam Terakhir", "Gula Gula Batuk", "Bantal Laper", "Bajigur Overheat",
+"Nasi Bakar Tersulut", "Celana Dalam Terbang", "Gigi Palsu Joget", "Sapu Terbang KW", "Toples Ngedance", "Kasur Tertelan", "Mangkok Ngelag",
+"Sendal Jepit Hampa", "Jaket Hujan Panas", "Sendok Retak", "Garpu Tersedak", "Flashdisk Berdoa", "Hardisk Cinta Lama", "Powerbank Lelah", "Speaker Kesurupan",
+"Kipas Angin Sakit", "Remote Hilang", "TV Tiduran", "Tisu Basah Stress", "Sabun Gatal", "Sampo Tumpah", "Gayung Nongkrong", "Lemari Ketawa", "Meja Goyang",
+"Kursi Ngelawak", "Sprei Kepanasan", "Kulkas Kosong", "Kompor Galau", "Wajan Belagu", "Rice Cooker Baper", "Gunting Murtad", "Jam Dinding Sombong",
+"Handuk Terbang", "Gelas Meleleh", "Botol Nangis", "Karet Gelang Jahat", "Kardus Kesurupan", "Paku Patah", "Obeng Galak", "Palu Mager", "Kunci Inggris Korea",
+"Plastik Ngedot", "Korek Gas Batuk", "Lilin Tersipu", "Tangga Lupa Diri", "Payung Nyesel", "Helm Nyasar", "Motor Mogok Sendiri", "Mobil Nge-prank",
+"Stik PS3 Menangis", "Keyboard Nari", "Mouse Patah Tulang", "Kabel USB Nge-vlog", "Laptop Nge-lag", "Wifi Hilang", "TikTok Bocil", "Dompet Tipis"
   ];
   
   function getRandomElement(array) {
@@ -46,7 +51,7 @@ const kodamData = {
   
   function cekKodam() {
     Swal.fire({
-      title: "Sapa Nama?",
+      title: "Isi Nama Kamu!",
       input: "text",
       inputAttributes: {
         autocapitalize: "off"
@@ -78,7 +83,7 @@ const kodamData = {
             } else {
                 swal.fire({
                                 title: "Peringatan",
-                                text: "Isi Nama Dulu Boss.",
+                                text: "Isi Nama Nya.",
                                 icon: "warning",
                             });
                             return;
@@ -97,7 +102,7 @@ const kodamData = {
         } else {
           Swal.fire({
             title: `Good Job ${result.value.name}!`,
-            text: `Ngape Kodam : ${result.value.randomKodam3}.`,
+            text: `Kodam Mu: ${result.value.randomKodam3}.`,
             icon: "success",
             width: 600,
             padding: "1em",
